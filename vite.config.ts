@@ -5,6 +5,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   base: "/CHICKS/",
+
   plugins: [react(), tailwindcss()],
 
   resolve: {
@@ -12,9 +13,6 @@ export default defineConfig({
       "@": path.resolve(import.meta.dirname, "src"),
     },
   },
-
-  root: path.resolve(import.meta.dirname),
-  publicDir: path.resolve(import.meta.dirname, "public"),
 
   build: {
     outDir: path.resolve(import.meta.dirname, "dist"),
